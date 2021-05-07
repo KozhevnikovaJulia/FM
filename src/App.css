@@ -1,38 +1,73 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
+  color: white;
+}
+h1 {
+  color: red;
+}
+.header__link {
+  text-decoration: none;
+  color: white;
+}
+.header__link:hover {
+  text-decoration: none;
+  color: red;
+}
+.topTracks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.topTracks__item {
+  background-color: gray;
+  opacity: 0.5;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  color: red;
+}
+.topTracks__item a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.topTracks__item img {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+.searchPage {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.searchTracks {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutArtistPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutArtistPage img {
+  width: 250px;
+  height: 250px;
+}
+.aboutArtistPage__tag {
+  border: 3px solid red;
+  padding: 10px;
+  margin: 10px;
+}
+.aboutArtistPage a {
+  text-decoration: none;
+  color: red;
+}
+.aboutArtistPage__tags {
+  display: flex;
+  flex-direction: row;
 }
